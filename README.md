@@ -96,6 +96,22 @@ A extensão tentará avançar para a próxima página antes de buscar novamente.
 
 ---
 
+### Screenshots
+
+![Screenshot 1](screenshots/img1.png)
+
+![Screenshot 2](screenshots/img2.png)
+
+![Screenshot 3](screenshots/img3.png)
+
+![Screenshot 4](screenshots/img4.png)
+
+![Screenshot 5](screenshots/img5.png)
+
+![Screenshot 6](screenshots/img6.png)
+
+---
+
 ## Instalação local
 
 ### 1. Baixar o projeto
@@ -137,11 +153,21 @@ filtro-questoes-autoria/
 ├── manifest.json
 ├── background.js
 ├── content.js
+├── PRIVACY.md
+├── README.MD
+├── LICENSE
 └── icons/
     ├── icon-16.png
     ├── icon-32.png
     ├── icon-48.png
     └── icon-128.png
+└── screenshots/
+    ├── img1.png
+    ├── img2.png
+    ├── img3.png
+    └── img4.png
+    ├── img5.png
+    └── img6.png
 ```
 
 ---
