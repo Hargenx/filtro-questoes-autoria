@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Filtro de Questões - SAVA",
+  "version": "2.0.0",
+  "description": "Filtra questões da Sala de Avaliações, mantendo visíveis apenas questões que contenham o termo desejado.",
+  "permissions": ["scripting", "activeTab"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": ["https://admin.saladeavaliacoes.com.br/*"],
+  "action": {
+    "default_title": "Abrir ou reiniciar o Filtro de Questões"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://admin.saladeavaliacoes.com.br/docente/disciplinas/*/turmas/*/prova/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
